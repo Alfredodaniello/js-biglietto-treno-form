@@ -25,17 +25,29 @@ generateButton.addEventListener("click", function() {
     };
     console.log(ticketPrice)
 
+    //Genero i numeri di carrozza e codice
+    const placeNumber = Math.floor(Math.random() * 10) + 1; 
+    const codeNumber = Math.floor(Math.random() * 2000) + 1000;
+
+
     //Mostro i dati all'utente
-    const userNameMessage =document.querySelector("#user-name-message").append(userName);
-    const stateSale= document.querySelector("#sale").append(sale);
-    const place = document.querySelector("#place").append("5");
-    const code = document.querySelector("#code").append("1396");
-    const finalPrice = document.querySelector("#price").append(ticketPrice + "€");
+    document.querySelector("#user-name-message").append(userName);
+    document.querySelector("#sale").append(sale);
+    document.querySelector("#place").append(placeNumber);
+    document.querySelector("#code").append(codeNumber);
+    document.querySelector("#price").append(ticketPrice + "€");
+    });
 
-
-    
-    
-
-
-})
+    //Pulisco i campi
+    const clearButton = document.querySelector("#clear-button");
+    clearButton.addEventListener("click", function() {
+        document.querySelector("#user-name").value = "";
+        document.querySelector("#distance").value = "";
+        document.querySelector("#user-age").value = "";
+        document.querySelector("#user-name-message").textContent = "";
+        document.querySelector("#sale").textContent = "";
+        document.querySelector("#place").textContent = "";
+        document.querySelector("#code").textContent = "";
+        document.querySelector("#price").textContent = "";
+    })
 
