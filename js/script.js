@@ -18,10 +18,10 @@ generateButton.addEventListener("click", function() {
     let sale = ("Standard")
     if (userAge < 18) {
         ticketPrice = ticketPrice - ticketPrice * 0.20;
-        sale = ("Sconto!");
+        sale = ("Sconto del 20%!");
     } else if (userAge > 65) {
         ticketPrice = ticketPrice - ticketPrice * 0.40;
-        sale = ("Sconto!");
+        sale = ("Sconto del 40%!");
     };
     console.log(ticketPrice)
 
