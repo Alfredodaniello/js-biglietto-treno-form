@@ -23,7 +23,7 @@ generateButton.addEventListener("click", function() {
         ticketPrice = ticketPrice - ticketPrice * 0.40;
         sale = ("Sconto del 40%!");
     };
-    console.log(ticketPrice)
+    const ticketPriceFixed = ticketPrice.toFixed(2);
 
     //Genero i numeri di carrozza e codice
     const placeNumber = Math.floor(Math.random() * 10) + 1; 
@@ -35,7 +35,7 @@ generateButton.addEventListener("click", function() {
     document.querySelector("#sale").append(sale);
     document.querySelector("#place").append(placeNumber);
     document.querySelector("#code").append(codeNumber);
-    document.querySelector("#price").append(ticketPrice + "€");
+    document.querySelector("#price").append(ticketPriceFixed + "€");
     });
 
     //Pulisco i campi
