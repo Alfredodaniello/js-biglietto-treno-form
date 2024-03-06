@@ -14,12 +14,28 @@ generateButton.addEventListener("click", function() {
     const userAge = parseInt(document.querySelector("#user-age").value);
 
     //Calcolo il prezzo del biglietto
-let ticketPrice = 0.21 * distance;
-if (userAge < 18) {
-    ticketPrice = ticketPrice - ticketPrice * 0.20;
-} else if (userAge > 65) {
-    ticketPrice = ticketPrice - ticketPrice * 0.40;
-};
-console.log(ticketPrice)
+    let ticketPrice = 0.21 * distance;
+    let sale = ("Standard")
+    if (userAge < 18) {
+        ticketPrice = ticketPrice - ticketPrice * 0.20;
+        sale = ("Sconto!");
+    } else if (userAge > 65) {
+        ticketPrice = ticketPrice - ticketPrice * 0.40;
+        sale = ("Sconto!");
+    };
+    console.log(ticketPrice)
+
+    //Mostro i dati all'utente
+    const userNameMessage =document.querySelector("#user-name-message").append(userName);
+    const stateSale= document.querySelector("#sale").append(sale);
+    const place = document.querySelector("#place").append("5");
+    const code = document.querySelector("#code").append("1396");
+    const finalPrice = document.querySelector("#price").append(ticketPrice + "€");
+
+
+    
+    
+
+
 })
 
