@@ -1,0 +1,95 @@
+/******************
+        RESET
+******************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(44, 182, 44);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 0 20px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 900px;
+    background-color: #ffffff;
+}
+
+.row{
+    display: flex;
+}
+.col {
+    margin-top: 10px;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+label {
+    color: rgb(44, 182, 44);
+    font-size: 20px;
+}
+
+input {
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid rgb(44, 182, 44);
+    outline: none;
+}
+
+.button-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+button {
+    color: rgb(44, 182, 44);
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.col-35 {
+    min-height: 100px;
+    background-color: gray;
+    padding: 20px;
+    width: 35%;
+}
+
+.col-65 {
+    width: 65%;
+}
+
+.h1-bot {
+    margin-bottom: 0px;
+}
+
+.container-bot {
+    padding-top: 10px;
+    min-height: 160px;
+}
+
+.col-25 {
+    padding: 20px;
+    width: 25%;
+}
+
+.row-bot {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    min-height: 100px;
+}
